@@ -1,0 +1,95 @@
+ git config --global user.name "sangamesh"
+student@gcc67 MINGW64 ~ (master)
+$ git config --global user.email "example@gmail.com"
+
+student@gcc67 MINGW64 ~ (master)
+$ cd Destop
+bash: cd: Destop: No such file or directory
+
+student@gcc67 MINGW64 ~ (master)
+$ cd desktop
+
+student@gcc67 MINGW64 ~/desktop (master)
+$ mkdir p1
+
+student@gcc67 MINGW64 ~/desktop (master)
+$ cd p1
+
+student@gcc67 MINGW64 ~/desktop/p1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/student/Desktop/p1/.git/
+
+student@gcc67 MINGW64 ~/desktop/p1 (master)
+$ echo "hello">prg1.txt
+
+student@gcc67 MINGW64 ~/desktop/p1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        prg1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+student@gcc67 MINGW64 ~/desktop/p1 (master)
+$ git add .
+warning: in the working copy of 'prg1.txt', LF will be replaced by CRLF the next time Git touches it
+
+student@gcc67 MINGW64 ~/desktop/p1 (master)
+$ git commit -m "initial commit"
+[master (root-commit) 6874a2a] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 prg1.txt
+
+student@gcc67 MINGW64 ~/desktop/p1 (master)
+$ git remote add origin https://github.com/vvce23ise0178-lab/program1.git
+
+student@gcc67 MINGW64 ~/desktop/p1 (master)
+$ git branch -M main
+
+student@gcc67 MINGW64 ~/desktop/p1 (main)
+$ git push -u origin main
+remote: Permission to vvce23ise0178-lab/program1.git denied to RishithaS1905.
+fatal: unable to access 'https://github.com/vvce23ise0178-lab/program1.git/': The requested URL returned error: 403
+
+student@gcc67 MINGW64 ~/desktop/p1 (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 216 bytes | 72.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/vvce23ise0178-lab/program1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+student@gcc67 MINGW64 ~/desktop/p1 (main)
+$ git log
+commit 6874a2a4401a4283849b61d690c8f06bef7cde8c (HEAD -> main, origin/main)
+Author: sangamesh <example@gmail.com>
+Date:   Thu Mar 12 10:16:49 2026 +0530
+
+    initial commit
+
+student@gcc67 MINGW64 ~/desktop/p1 (main)
+$ git clone https://github.com/vvce23ise0178-lab/program1.git
+Cloning into 'program1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+student@gcc67 MINGW64 ~/desktop/p1 (main)
+$ cd program1
+
+student@gcc67 MINGW64 ~/desktop/p1/program1 (main)
+$ git log
+commit 6874a2a4401a4283849b61d690c8f06bef7cde8c (HEAD -> main, origin/main, origin/HEAD)
+Author: sangamesh <example@gmail.com>
+Date:   Thu Mar 12 10:16:49 2026 +0530
+
+    initial commit
+
