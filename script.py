@@ -1,3 +1,3 @@
 git add .
-git commit -m "test webhook"
+git commit -m "webhook test"
 git push origin main
