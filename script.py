@@ -1,2 +1,3 @@
-print("Hello Jenkins Webhook")
-print("Testing webhook trigger")
+git add .
+git commit -m "test webhook"
+git push origin main
