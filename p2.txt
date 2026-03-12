@@ -1,0 +1,63 @@
+# Configure Git username and email
+git config --global user.name "Prajwal Biradar"
+git config --global user.email "your-email@example.com"
+
+# Go to Desktop
+cd Desktop
+
+# Clone the empty repository
+git clone https://github.com/Prajwalgb99/p2.git
+
+# Enter the repository
+cd p2
+
+# Create a file
+echo "hello" > first.txt
+
+# Add file
+git add .
+
+# First commit
+git commit -m "Initial Commit"
+
+# Create a new branch
+git checkout -b feature
+
+# Modify file in feature branch
+echo "hi" > first.txt
+
+# Add changes
+git add .
+
+# Commit changes
+git commit -m "Second Commit in feature branch"
+
+# Switch back to main branch
+git checkout main
+
+# Modify file in main branch
+echo "hello hi" > first.txt
+
+# Add changes
+git add first.txt
+
+# Commit changes
+git commit -m "Third Commit in main branch"
+
+# Push main branch to GitHub
+git push origin main
+
+# Show difference between branches
+git diff main feature
+
+# Merge feature branch into main
+git merge feature
+
+# (If conflict occurs, edit file manually then run:)
+git add .
+
+# Commit merge resolution
+git commit -m "Resolve Conflict"
+
+# Push final code
+git push origin main
